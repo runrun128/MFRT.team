@@ -1,0 +1,9 @@
+<div class="news-item" onclick="toggle(this)">
+  <div class="news-header">
+    <span class="date">2026.04.07</span>
+    <span class="title">タイトル</span>
+  </div>
+  <div class="news-content">
+    本文を書く
+  </div>
+</div>

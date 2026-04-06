@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MFRT</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Helvetica Neue", sans-serif;
+    }
+
+    body {
+      background: #ffffff;
+      color: #111;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .logo {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+      letter-spacing: 6px;
+    }
+
+    .subtitle {
+      color: #888;
+      font-size: 13px;
+      margin-bottom: 30px;
+    }
+
+    .concept {
+      font-size: 16px;
+      margin-bottom: 50px;
+    }
+
+    /* NEWS */
+    .news {
+      text-align: left;
+      border-top: 1px solid #ddd;
+      padding-top: 30px;
+    }
+
+    .news h2 {
+      font-size: 16px;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    .news-item {
+      border-bottom: 1px solid #eee;
+      padding: 12px 0;
+      cursor: pointer;
+    }
+
+    .news-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+
+    .date {
+      color: #888;
+    }
+
+    .title {
+      font-weight: 500;
+    }
+
+    .news-content {
+      font-size: 13px;
+      color: #555;
+      margin-top: 10px;
+      display: none;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 12px;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <img src="logo.png" class="logo">
+
+  <h1>MFRT</h1>
+  <p class="subtitle">Multi Field Art Team</p>
+
+  <p class="concept">
+    ジャンルに縛られない表現集団
+  </p>
+
+  <div class="news">
+    <h2>NEWS</h2>
+
+    <!-- ▼ここだけ触ればOK -->
+    <div class="news-item" onclick="toggle(this)">
+      <div class="news-header">
+        <span class="date">2026.04.06</span>
+        <span class="title">無事設立</span>
+      </div>
+      <div class="news-content">
+        本日ノリと勢いでこの集団が完成しました。
+      </div>
+    </div>
+
+ 
+
+  <footer>
+    © MFRT
+  </footer>
+
+</div>
+
+<script>
+function toggle(element) {
+  const content = element.querySelector(".news-content");
+  content.style.display = 
+    content.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
